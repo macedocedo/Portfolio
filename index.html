@@ -1,355 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fórum</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- Extensão CSS / Java-->
+<header>
+  <div class="logo">Save-Info<span>.</span></div>
+  <div class="header-actions">
+    <button class="btn btn-ghost" onclick="openSearch()">🔍 Buscar</button>
+    <button class="btn btn-primary" onclick="openNewPost()">+ Nova Publicação</button>
+  </div>
+</header>
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="./styles.css" rel="stylesheet" />
-     
-      <title>Portfólio Mateus Macedo</title>
-     
-        
-    </head>
-
-    <!-- CORPO -->
-    
-    <body id="page-top">
-
-        <!-- Navegação-->
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#sobre">
-                <span class="d-block d-lg-none">Mateus Macedo</span>
-                <span class="d-none d-lg-block"></span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sobre">Início</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#escolaridade">Escolaridade</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#esperiencia">Experiências</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Habilidades</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#objetivo">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificados">Certificados</a></li>
-                  <!-- Navegação
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="flag.html">Projeto - FlagTI</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://macedocedo.github.io/ArteSport/">Projeto - ArteSport</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://macedocedo.github.io/Adote.CachorroChorro/">Projeto- CachorroChorro</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://macedocedo.github.io/CapivaraShow/">Projeto- CachorroChorro</a></li>
-                    -->
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Page Content-->
-
-        <div class="container-fluid p-0">
-
-            <!-- Banner -->
-
-            <section class="resume-section" id="sobre">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        <span class="text-primary">Mateus Macedo</span>
-                    </h1>
-                    <div class="mb-5">
-                    <br>
-                    <i class="far fa-address-card"></i>
-                     27 Anos - Brasil
-                    <br> 
-                    <i class="fas fa-house-user"></i> 
-                     Campinas - SP
-                    <br>
-                    <i class="fab fa-whatsapp"></i>
-                      19 99767 - 6683
-                    <br> 
-                    <a>Mateus.macedop@hotmail.com</a>
-                    </div>
-
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/mateus-macedo-06095516a/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://github.com/macedocedo"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.instagram.com/macedocedo_/"><i class="fab fa-instagram"></i></a>
-                        <a class="social-icon" href="https://wa.me/5519997676683"><i class="fab fa-whatsapp"></i></a>
-                    </div>
-                    
-                </div>
-            </section>
-            
-            <hr class="m-0" />
-
- <!-- Escolaridade-->
-
- <section class="resume-section" id="escolaridade">
-    <div class="resume-section-content">
-        <h2 class="mb-5">Escolaridade</h2>
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Faculdade UniMetrocamp.</h3>
-                <div class="subheading mb-3">Graduado - Análise e Desenvolvimento de Sistemas</div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Janeiro 2020 - Dezembro 2022</span></div>
-        </div>
-        <div class="d-flex flex-column flex-md-row justify-content-between">
-            <div class="flex-grow-1">
-                <h3 class="mb-0">Faculdade Anhanguera Educacional.</h3>
-                <div class="subheading mb-3">Graduado - Tecnólogo em logística</div>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">Janeiro 2018 - Janeiro 2020</span></div>
-        </div>
+<div class="layout">
+  <aside>
+    <div class="sidebar-section">
+      <div class="sidebar-title">Categorias</div>
+      <div id="cat-list"></div>
+      <div class="add-cat-form" id="add-cat-form" style="display:none;">
+        <input type="text" id="new-cat-input" placeholder="Nome da categoria..." maxlength="30" />
+        <button class="btn btn-sm btn-primary" onclick="confirmAddCat()">+</button>
+      </div>
+      <button class="btn btn-outline btn-sm" style="margin-top:10px; width:100%;" onclick="toggleAddCat()">+ Categoria</button>
     </div>
-</section>
-<hr class="m-0" />
+    <div class="sidebar-section">
+      <div class="sidebar-title">Info</div>
+      <div style="font-size:13px; color:var(--text3); line-height:1.7;">
+        <div id="info-posts">0 publicações</div>
+        <div id="info-cats">0 categorias</div>
+      </div>
+    </div>
+  </aside>
 
-            <!-- Experiências -->
+  <main>
+    <div class="page-header">
+      <div>
+        <div class="page-title" id="page-title">Todas as Publicações</div>
+        <div class="page-subtitle" id="page-subtitle">Bem-vindo ao fórum</div>
+      </div>
+    </div>
 
-            <section class="resume-section" id="esperiencia">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experiências</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"> Agis Distribuidora de Informática e Tecnologia </h3>
-                            <div class="subheading mb-3">Analista de Sistemas Júnior </div>
-                            <p>
-                                • Sustentação e suporte aos sistemas ERP TOTVS Protheus e Datasul. <br>
-                                • Atendimento e gestão de chamados via Jira, com análise de falhas e ajustes sistêmicos.<br>
-                                • Acompanhamento dos processos de fechamento e faturamento de Notas Fiscais.<br>
-                                • Sustentação e desenvolvimento de novas automações no Zendesk (CRM).<br>
-                                • Monitoramento e acompanhamento de automações RPW no TOTVS Datasul. <br>  
-                            </p>
-                            <br>
-                            <br>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Arrow IT Soluções. </h3>
-                            <div class="subheading mb-3">Analista de Sistemas Júnior </div>
-                            <p>
-                                •	Gerenciamento de processos de pagamento PDV/SAT e servidores Linux via SSH com integrações no ERP.
-                                <br> Correções de cupons de pagamento junto à Arius/Sefaz. <br>  
-                                •	Suporte remoto para clientes internos e externos (N1 e N2).<br>
-                                •	Criação de relatórios e planilhas estratégicas.<br>
-                                •	Registro e mapeamento de usuários no Active Directory.<br>
-                                •	Análise de sistemas ERP e bancos de dados.<br>
-                                •	Atendimento presencial a clientes.
-                            </p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">  </span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">CPFL Energia Paulista. </h3>
-                            <div class="subheading mb-3"> Estagiário infraestrutura TI </div>
-                            <p>
-                                •	Gestão eficiente de compras de equipamentos de TI (CAPEX/OPEX). <br>
-                                •	Criação de relatórios de compras de hardware e periféricos. <br>
-                                •	Logística e transporte de equipamentos, incluindo notificação fiscal no SAP. <br>
-                                •	Uso do CRM para consultas de colaboradores e fornecedores. <br>
-                                •	Atendimento ao cliente interno e resolução de chamados. <br>
-                                •	Contribuição em projetos de inovação com foco em UX Design.
-                                </p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Syscontrol Automação Industrial.</h3>
-                            <div class="subheading mb-3">Técnico de T.I </div>
-                            <p>
-                                •	Experiência em manutenção de impressoras industriais e equipamentos de automação. <br>
-                                •	Configuração de leitores de código de barras, sensores e coletores PDA.<br>
-                                •	Serviços de manutenção preventiva e corretiva. <br>
-                                •	Suporte técnico.
-                                <p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0"> Vitabe Cosméticos. </h3>
-                            <div class="subheading mb-3"> Técnico de Infraestrutura TI </div>
-                            <p>
-                                •	Configuração e manutenção de infraestrutura de redes. <br>
-                                •	Gerenciamento de usuários e domínios. <br>
-                                •	Administração de software de marcação de ponto. <br>
-                                •	Implementação de Raspberry Pi. <br>
-                                •	Suporte a sistemas de chamados. <br>
-                                •	Manutenção de notebooks e configuração de equipamentos.
-                                </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
+    <div class="sort-bar">
+      <span style="font-size:12px; color:var(--text3);">Ordenar:</span>
+      <button class="sort-btn active" data-sort="recent" onclick="setSort('recent')">Recentes</button>
+      <button class="sort-btn" data-sort="oldest" onclick="setSort('oldest')">Mais antigos</button>
+      <button class="sort-btn" data-sort="alpha" onclick="setSort('alpha')">A–Z</button>
+    </div>
 
-           
+    <div id="posts-container"></div>
+  </main>
+</div>
 
-            <!-- Habilidades -->
-
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-6">Habilidades</h2>
-                    <br>
-                    <div class="subheading mb-6">Competências e qualificações</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5" class="subheading"></i></li>
-
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                 
-                        <li class="list-inline-item"><i class="fab fa-js"></i></li>
-                  
-                        <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                  
-                        <li class="list-inline-item"><i class="fas fa-file-word"></i></li>
-                    
-                        <li class="list-inline-item"><i class="fas fa-file-excel"></i></li>
-                   
-                        <li class="list-inline-item"><i class="fas fa-file-excel"></i></li> 
-                
-                        <li class="list-inline-item"><i class="fas fa-server"></i></li>
-                  
-                        <li class="list-inline-item"><i class="fas fa-network-wired"></i></li>
-               
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                    </ul>
-
-                    <div class="subheading mb-3"></div>
-                    <br>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Suporte técnico N1 e N2 / Help Desk
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Análise de processos de pagamento PDV/SAT (Ponto de Venda)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Controle logístico de fluxos, planilhas e relatórios
-                        </li>                                    
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Sistemas de gestão: CRM, ERP e TMS (TOTVS / Zendesk)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Desenvolvimento Front-end: HTML, CSS e JavaScript
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Gerenciamento e infraestrutura de rede TI (Linux, Servidores, Mikrotik, Access Point-AP).
-                        </li>
-                        <br>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            <!-- Sobre -->
-
-            <section class="resume-section" id="objetivo">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Sobre</h2>
-            
-                        
-                <p>   
-                    🚀 Minha jornada profissional tem sido marcada por uma constante busca por crescimento e aprendizado, especialmente na interseção entre tecnologia e logística. Desde o início, concentrei-me em adquirir habilidades que me permitam não apenas compreender os processos logísticos, mas também otimizá-los através da aplicação de soluções tecnológicas inovadoras.
-               </p>
-                    
-                <p> 
-                    💡 Uma área que despertou particular interesse em minha trajetória em infraestrutura foi cloud computing. Reconheço que a adoção de soluções em nuvem pode revolucionar como as empresas gerenciam suas operações logísticas. A capacidade de acessar recursos de computação, armazenamento e software sob demanda, de forma escalável e flexível, oferece um potencial enorme para melhorar a eficiência e reduzir os custos.
-               </p>
-
-                <p> 
-                    🔍 Minha experiência com sistemas ERP, como SAP e TOTVS, me proporcionou uma compreensão sólida dos benefícios de centralizar e integrar dados em uma única plataforma. Ao integrar esses sistemas com serviços em nuvem, podemos expandir ainda mais sua capacidade, permitindo análises avançadas, automação de processos e colaboração em tempo real entre diferentes departamentos e parceiros comerciais.
-                </p>
-                    
-                    🔝 À medida que avanço em minha carreira, estou comprometido em explorar ainda mais as oportunidades oferecidas pela computação em nuvem na área da logística. Seja na implementação de sistemas de gestão de armazéns baseados em nuvem, na integração de soluções de rastreamento e monitoramento em tempo real ou na adoção de algoritmos de otimização de roteamento hospedados na nuvem, estou determinado a utilizar essa tecnologia para impulsionar a eficiência e a competitividade das operações logísticas em que estiver envolvido.
-                </p>
-                    
-                </li>
-                    
-                </div>
-            </section>
-            <hr class="m-0" />
-
-            <!-- Certificados-->
-
-            <section class="resume-section" id="certificados">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Certificados</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <p>Cloud Azure - AZ-900 <br> Microsoft - Concluído em 2024.</p>
-                        </li>
-                    
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <p>Linux Essentials <br> LinuxTips - Concluído em 2024.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            <p>Fundamentos Design Ux / Protótipo - Figma <br> Cousera / Google - Concluído em 2022.</p>
-                           </li>
-                        <li>
-                         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         <p>Excel Intermediário / Segurança da informação / Política de gestão / Gestão de projetos Ágil / Híbrido / Cascata / Fundamentos GMO / Ágil <br> Universidade CPFL - Concluído em 2022.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                           <p> Infraestrutura de TI / Sistemas Operacionais / Governança de TI / COBIT / ITIL / 
-                            Modelagem e banco de dados / Projetos de sistemas TI / Excel Intermediário / Power query / PowerBI <br> Fundação Bradesco - Concluído em 2020.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         <p>Administração de Empresas <br> CIEE - Concluído em 2015.</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                         <p>Gestão e Negócios <br> SENAC Campinas - Concluído em 2013.</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+<!-- New / Edit Post Modal -->
+<div class="overlay" id="new-post-overlay" onclick="closeOnBg(event,'new-post-overlay')">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="form-modal-title">Nova Publicação</div>
+      <button class="modal-close" onclick="closeNewPost()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label class="form-label">Título *</label>
+        <input type="text" class="form-input" id="f-title" placeholder="Título da publicação..." />
+      </div>
+      <div class="form-group">
+        <label class="form-label">Conteúdo *</label>
+        <textarea class="form-textarea" id="f-body" placeholder="Escreva o conteúdo aqui..."></textarea>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Categoria</label>
+        <select class="form-select" id="f-cat"></select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Autor</label>
+        <input type="text" class="form-input" id="f-author" placeholder="Seu nome..." />
+      </div>
+      <div class="form-group">
+        <div class="checkbox-row">
+          <input type="checkbox" id="f-pin">
+          <label for="f-pin">📌 Fixar esta publicação</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Mídia (opcional)</label>
+        <div class="media-tabs">
+          <button class="media-tab active" onclick="switchTab('none')">Nenhuma</button>
+          <button class="media-tab" onclick="switchTab('img-url')">Imagem URL</button>
+          <button class="media-tab" onclick="switchTab('img-upload')">Imagem Upload</button>
+          <button class="media-tab" onclick="switchTab('video-url')">Vídeo URL</button>
+          <button class="media-tab" onclick="switchTab('video-embed')">YouTube/Vimeo</button>
         </div>
 
-        <!-- Bootstrap core JS-->
+        <div class="media-section active" id="tab-none"></div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="media-section" id="tab-img-url">
+          <div class="url-input-row">
+            <input type="url" class="form-input" id="f-img-url" placeholder="https://..." oninput="previewImgUrl()" />
+          </div>
+          <div class="img-preview" id="img-url-preview" style="display:none;">
+            <img id="img-url-thumb" src="" alt="" />
+          </div>
+        </div>
 
-        <!-- Core theme JS-->
-        
-        <script src="./scripts.js"></script>
+        <div class="media-section" id="tab-img-upload">
+          <div class="upload-area" id="upload-area" onclick="document.getElementById('f-img-file').click()">
+            <div style="font-size:28px; margin-bottom:6px;">🖼️</div>
+            <div>Clique ou arraste uma imagem aqui</div>
+            <div style="font-size:12px; margin-top:4px;">PNG, JPG, GIF, WEBP</div>
+          </div>
+          <input type="file" id="f-img-file" accept="image/*" style="display:none;" onchange="handleImgUpload()" />
+          <div class="img-preview" id="img-upload-preview" style="display:none; margin-top:8px;">
+            <img id="img-upload-thumb" src="" alt="" />
+          </div>
+        </div>
 
-    </body>
+        <div class="media-section" id="tab-video-url">
+          <input type="url" class="form-input" id="f-video-url" placeholder="URL do arquivo de vídeo (.mp4, .webm...)" />
+        </div>
 
-<footer class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <div class="text-center p-3" style="background-color: rgb(0, 0, 0);">
-        <a class="text-white" href="flag.html">Outros projetos</a>
-</footer>
+        <div class="media-section" id="tab-video-embed">
+          <input type="url" class="form-input" id="f-video-embed" placeholder="URL do YouTube, Vimeo, etc..." />
+          <div style="font-size:12px; color:var(--text3); margin-top:4px;">Cole o link normal ou o link de incorporação</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeNewPost()">Cancelar</button>
+      <button class="btn btn-primary" style="background:var(--accent); color:#fff;" onclick="submitPost()">Publicar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Post View Modal -->
+<div class="overlay" id="view-overlay" onclick="closeOnBg(event,'view-overlay')">
+  <div class="modal" style="max-width:780px;">
+    <div class="modal-header">
+      <div class="modal-title" id="view-cat-tag" style="font-size:14px; font-family:'DM Sans'; font-weight:400; color:var(--text3);">Categoria</div>
+      <div style="display:flex; gap:6px; align-items:center;">
+        <button class="btn btn-sm btn-outline" id="view-edit-btn" onclick="editCurrentPost()">✏️ Editar</button>
+        <button class="btn btn-sm btn-danger" id="view-del-btn" onclick="deleteCurrentPost()">🗑️ Excluir</button>
+        <button class="modal-close" onclick="closeView()">×</button>
+      </div>
+    </div>
+    <div id="view-content"></div>
+    <div class="post-view-meta" id="view-meta"></div>
+  </div>
+</div>
+
+<!-- Search Modal -->
+<div class="overlay" id="search-overlay" onclick="closeOnBg(event,'search-overlay')">
+  <div class="modal" style="max-width:540px;">
+    <div class="modal-header">
+      <div class="modal-title">Buscar</div>
+      <button class="modal-close" onclick="closeSearch()">×</button>
+    </div>
+    <div class="modal-body">
+      <input type="text" class="form-input" id="search-input" placeholder="Buscar publicações..." oninput="doSearch()" />
+      <div id="search-results" style="margin-top:12px;"></div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
 </html>
-
-
-<!--navax0@gmail.com-->
-
-
-
-
-
-
-
-
-
-
-
-
